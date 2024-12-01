@@ -1,0 +1,261 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.profile {
+  display: flex;
+  /* gap: 10px; */
+  align-items: center;
+}
+
+.arrow {
+  width: 39px;
+  height: 39px;
+}
+
+/* Left Side Styles */
+.left-part {
+  align-items: flex-start;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  padding: 20px;
+}
+.square {
+  width: 240px;
+  height: 180px;
+  background-color: #ddd;
+  margin: 20px 0;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+/* Right Side Styles */
+.right-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(to bottom, #e9f2f3, #a6c5e3);
+  overflow-y: auto;
+  border-radius: 15px;
+  width: 400px;
+  height: 100%;
+  margin-right: 20px;
+}
+
+.avatar-container {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  overflow: hidden;
+  margin-left: 4vw;
+}
+
+.avatar-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.avatar-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+/*Form styles */
+input {
+  margin-right: 100px;
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  border: 1px solid silver;
+  outline: none;
+  padding: 10px 15px;
+  background: #fafafa;
+  color: #333;
+}
+
+button {
+  border: 0;
+  border-radius: 5px;
+  outline: none;
+  padding: 10px 15px;
+  background: #1235aa;
+  color: #c9c3dd;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 500ms ease;
+  margin-right: 10px;
+}
+
+button:hover {
+  transform: translateY(-5px);
+}
+
+.success-message {
+  margin-top: 20px;
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.success-message p {
+  margin: 0;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+  display: block;
+}
+
+.mandatory-note {
+  font-size: 14px;
+  color: #333;
+  margin-top: 5px;
+  font-style: italic;
+}
+
+.profile-visibility-container {
+  margin-top: 15px;
+}
+
+.radio-group {
+  display: flex;
+  /* gap: 10px; */
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  /* gap: 8px; */
+}
+
+.radio-button {
+  color: #007bff;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input[type="radio"]:checked {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.radio-label span {
+  font-size: 14px;
+}
+
+.add-tag-btn,
+.add-profile-link-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #007bff;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 10px;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 10px; */
+  margin-top: 10px;
+}
+
+.tag-item {
+  padding: 8px 16px;
+  border: 2px solid #007bff;
+  border-radius: 20px;
+  background-color: #f0f8ff;
+  cursor: pointer;
+}
+
+.tag-item:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.selected-tags {
+  margin-top: 10px;
+}
+
+.selected-tag {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #e0f7fa;
+  border: 1px solid #007bff;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+.remove-btn {
+  background: none;
+  border: none;
+  color: red;
+  cursor: pointer;
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.profile-link-section {
+  margin-top: 20px;
+}
+
+.links-btn {
+  display: flex;
+}
+
+.profile-link {
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.input-group {
+  display: flex;
+  /* gap: 10px; */
+  margin-bottom: 5px;
+}
+
+.profile-link input {
+  margin-right: 10px;
+}
+
+.delete-icon {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
